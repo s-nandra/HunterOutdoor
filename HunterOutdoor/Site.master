@@ -1,0 +1,149 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title>Hunter-Outdoor</title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <script src="Scripts/jquery-1.9.1.js" type="text/javascript"></script>
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+    <script type="text/javascript">
+        $('a[href$=_SkipLink]').each(function () {
+            $(this).remove();
+        });
+    </script>
+
+    <meta name="keywords" content="Hunter-Outdoor,Hunter Outdoor, Hunter, Outdoor, Hunter Jackets, Hunter Coats, wax, treggings, Hunter Accessories, Hunter UK" />
+    <meta name="description" content="UK based manufacturers of Hunter-Outdoor and Styltex branded clothing. Specialist in high class wax clothing." />
+
+ 
+</head>
+<body>
+    <form runat="server">
+    <div id="pageHeader">
+        <div class="pageContainer">
+
+            <a href="default.aspx" id="HunterLogo">
+                <asp:Image ImageUrl="~/images/hunter_small.gif" runat="server" alt="Hunter Outdoor" />
+               
+            </a> 
+            <div class="HunterLogoText"> Hunter-Outdoor <br/> 
+            </div>
+            
+           
+
+            <div class="loginDisplay">
+                <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+                    <AnonymousTemplate>
+                        [ <a href="~/Account/Login.aspx" id="HeadLoginStatus" runat="server">Log In</a>
+                        ]
+                    </AnonymousTemplate>
+                    <LoggedInTemplate>
+                        Welcome <span class="bold">
+                            <asp:LoginName ID="HeadLoginName" runat="server" />
+                        </span>! [
+                        <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="Log Out"
+                            LogoutPageUrl="~/" />
+                        ]
+                    </LoggedInTemplate>
+                    <RoleGroups>
+                        <asp:RoleGroup Roles="Admin">
+                            <ContentTemplate>
+                                Menu Link2
+                            </ContentTemplate>
+                        </asp:RoleGroup>
+                    </RoleGroups>
+                </asp:LoginView>
+                <br />  0121 555 8334 | 07855 595 097
+                <br /><a href="mailto:info@Hunter-OutdoorUK.com">info@Hunter-OutdoorUK.com </a> 
+              
+            </div>
+        </div>
+    </div>
+    <div id="subPageHeader">
+      <div class="pageContainer">
+        <div  class="group9hdg">Hunter-Outdoor & Group-9 travel wear products</div></div>
+    </div>
+    <div class="page">
+        <div class="header">
+            <div class="clear hideSkiplink">
+                <asp:Menu ID="NavigationMenu" Orientation="horizontal" CssClass="menu" IncludeStyleBlock="false"
+                    SkipLinkText="" runat="server">
+                    <DynamicMenuStyle CssClass="IE8Fix" />
+                </asp:Menu>
+            </div>
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-links">
+            <ul>
+                <li>
+                    <h2>
+                        Products</h2>
+                </li>
+                
+                <li><a href="Mens.aspx" title="Men">Men</a></li>
+                <li><a href="Womens.aspx/" title="Women">Women</a></li>
+                <li><a href="Kids.aspx" title="Kids">Kids</a></li>
+                <li><a href="Accessories.aspx">Accessories</a></li>
+                <li><a href="Group9.aspx">Group-9</a></li>
+                <li><a href="azproducts.aspx"  title="Product A-Z">Product A-Z</a></li>
+             <%--   <li><a href="/Gift-Vouchers/Cat/pgehtml.aspx?cid=6078" title="Buy Gift Vouchers"
+                    rel="nofollow">Buy Gift Vouchers</a></li>--%>
+            </ul>
+            <ul>
+            
+                <li><h2>Links</h2></li>
+                <li><a href="http://styltex.co.uk" target="_blank">styltex</a></li>
+            </ul>
+            <ul>
+            <li></li>
+            </ul>
+            <ul>
+                <li>  <asp:ImageButton ID="imgDownload" runat="server" Visible="false" OnClick="imgDownload_Click"
+                    ImageUrl="~/images/Home/downloadIcon.png" /></li>
+            </ul>
+
+
+            <%--<ul>
+                <li>
+                    <h2>
+                        Follow ASOS</h2>
+                </li>
+                <li>
+                    <!-- mp_trans_process_disable_start -->
+                    <!-- mp_trans_process_disable_end -->
+                </li>
+                <li><a href="http://www.facebook.com/ASOSOfficial" class="new-tab" title="Facebook"
+                    rel="nofollow" target="_blank">Facebook</a></li>
+                <!--mp_trans_remove_start-->
+                <li><a href="http://twitter.com/ASOS" class="new-tab" title="Twitter" rel="nofollow"
+                    target="_blank">Twitter</a></li>
+                <!--mp_trans_remove_end-->
+                <li><a href="http://www.youtube.com/asosfashion" class="new-tab" title="YouTube"
+                    rel="nofollow" target="_blank">YouTube</a></li>
+            </ul>
+            <ul>
+                <li>
+                    <h2>
+                        More about ASOS</h2>
+                </li>
+                <li><a href="http://www.asosplc.com/responsibility.aspx" title="Corporate Responsibility"
+                    rel="nofollow">Corporate Responsibility</a></li>
+                <li><a href="https://asoscareers.asos.com/" title="Jobs at ASOS">Jobs at ASOS</a></li>
+                <li><a href="http://www.asosplc.com" title="Investors">Investors</a></li>
+            </ul>--%>
+        </div>
+    
+        <div id="footerCopyright">
+            <span>© Copyright 2014 Hunter-Outdoor. All Rights Reserved. <br /> Studio Triple8one <br /></span></div>
+    </div>
+    </form>
+</body>
+</html>

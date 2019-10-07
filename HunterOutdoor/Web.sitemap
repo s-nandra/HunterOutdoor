@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="Default.aspx" title="Home"  description="Home Page">
+        <siteMapNode url="Mens.aspx" title="Mens"  description="Mens Jackets, Coats and Blazers" >
+          <siteMapNode url="ProductDetails.aspx" title="ProductDetails"  description="ProductDetails" />
+        </siteMapNode>
+          
+        <siteMapNode url="Womens.aspx" title="Womens"  description="Womens Jackets, Coats and Blazers" />
+      
+        <siteMapNode url="Kids.aspx" title="Kids"  description="Kids Jackets, Coats and Blazers" />
+        <siteMapNode url="Accessories.aspx" title="Accessories"  description="Accessories" />
+        <siteMapNode url="Group9.aspx" title="Group-9"  description="Group-9" />
+        <siteMapNode url="Admin/Administration.aspx" title="Administration"  description="Administration" />
+ 
+    </siteMapNode>
+</siteMap>
+
+ 
+
+    
