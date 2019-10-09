@@ -36,8 +36,7 @@
             <div class="loginDisplay">
                 <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
                     <AnonymousTemplate>
-                        [ <a href="~/Account/Login.aspx" id="HeadLoginStatus" runat="server">Log In</a>
-                        ]
+                   
                     </AnonymousTemplate>
                     <LoggedInTemplate>
                         Welcome <span class="bold">
@@ -94,13 +93,13 @@
                 <li><a href="Accessories.aspx">Accessories</a></li>
                 <li><a href="Group9.aspx">Group-9</a></li>
                 <li><a href="azproducts.aspx"  title="Product A-Z">Product A-Z</a></li>
-             <%--   <li><a href="/Gift-Vouchers/Cat/pgehtml.aspx?cid=6078" title="Buy Gift Vouchers"
-                    rel="nofollow">Buy Gift Vouchers</a></li>--%>
+         
             </ul>
             <ul>
             
                 <li><h2>Links</h2></li>
                 <li><a href="http://styltex.co.uk" target="_blank">styltex</a></li>
+                <li><a href="~/Account/Login.aspx" id="HeadLoginStatus" runat="server">Admin Log In</a></li>
             </ul>
             <ul>
             <li></li>
@@ -109,36 +108,6 @@
                 <li>  <asp:ImageButton ID="imgDownload" runat="server" Visible="false" OnClick="imgDownload_Click"
                     ImageUrl="~/images/Home/downloadIcon.png" /></li>
             </ul>
-
-
-            <%--<ul>
-                <li>
-                    <h2>
-                        Follow ASOS</h2>
-                </li>
-                <li>
-                    <!-- mp_trans_process_disable_start -->
-                    <!-- mp_trans_process_disable_end -->
-                </li>
-                <li><a href="http://www.facebook.com/ASOSOfficial" class="new-tab" title="Facebook"
-                    rel="nofollow" target="_blank">Facebook</a></li>
-                <!--mp_trans_remove_start-->
-                <li><a href="http://twitter.com/ASOS" class="new-tab" title="Twitter" rel="nofollow"
-                    target="_blank">Twitter</a></li>
-                <!--mp_trans_remove_end-->
-                <li><a href="http://www.youtube.com/asosfashion" class="new-tab" title="YouTube"
-                    rel="nofollow" target="_blank">YouTube</a></li>
-            </ul>
-            <ul>
-                <li>
-                    <h2>
-                        More about ASOS</h2>
-                </li>
-                <li><a href="http://www.asosplc.com/responsibility.aspx" title="Corporate Responsibility"
-                    rel="nofollow">Corporate Responsibility</a></li>
-                <li><a href="https://asoscareers.asos.com/" title="Jobs at ASOS">Jobs at ASOS</a></li>
-                <li><a href="http://www.asosplc.com" title="Investors">Investors</a></li>
-            </ul>--%>
         </div>
     
         <div id="footerCopyright">
